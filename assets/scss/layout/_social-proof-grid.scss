@@ -1,0 +1,48 @@
+@use '../abstract' as a;
+
+.social-proof-layout {
+  display: grid;
+  @include a.set-grid-areas(header, reviews, testimonials);
+  justify-items: center;
+  gap: 4rem;
+  place-self: center;
+  width: 100%;
+  margin: 3rem 0;
+
+  @include a.breakpoint(medium) {
+    width: min(90%, 90rem);
+    grid-template:
+      'header reviews'
+      'testimonials testimonials';
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cards-grid {
+  display: grid;
+  justify-items: center;
+  width: min(90%, 40rem);
+  grid-template: 1fr 1fr 1fr / 1fr;
+  gap: 1rem;
+
+  @include a.breakpoint(medium) {
+    width: 100%;
+    height: 150%;
+    grid-template: 1fr / 1fr 1fr 1fr;
+  }
+}
+
+.reviews-layout {
+  width: min(90%, 25rem);
+
+  @include a.breakpoint(medium) {
+    width: 100%;
+  }
+}
+
+.reviews-grid {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  gap: 2.5rem;
+}

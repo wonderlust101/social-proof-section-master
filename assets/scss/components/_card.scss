@@ -1,0 +1,43 @@
+@use '../abstract' as a;
+
+.card {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  color: var(--clr-white);
+  background-color: var(--clr-primary-color-very-dark-magenta);
+  border-radius: 0.5rem;
+
+  @include a.breakpoint(medium) {
+    width: 100%;
+    gap: 1.5rem;
+
+    &:nth-child(1) {
+      place-self: flex-start;
+    }
+
+    &:nth-child(2) {
+      place-self: center;
+    }
+
+    &:nth-child(3) {
+      place-self: flex-end;
+    }
+  }
+
+  &__buyer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__buyer-image {
+    width: 3rem;
+    border-radius: 50rem;
+  }
+
+  &__buyer-verified {
+    line-height: 1.25;
+    color: var(--clr-primary-color-soft-pink);
+  }
+}

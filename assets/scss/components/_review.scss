@@ -1,0 +1,40 @@
+@use '../abstract' as a;
+
+.review {
+  display: grid;
+  grid-template: auto auto / auto;
+  justify-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  color: var(--clr-primary-color-very-dark-magenta);
+  background-color: var(--clr-neutral-color-light-grayish-magenta);
+  border-radius: 0.5rem;
+
+  @include a.breakpoint(medium) {
+    width: max-content;
+    grid-template: auto  / auto auto;
+    align-items: center;
+    gap: 1rem;
+
+    &:nth-child(1) {
+      place-self: flex-start;
+    }
+
+    &:nth-child(2) {
+      place-self: center;
+    }
+
+    &:nth-child(3) {
+      place-self: flex-end;
+    }
+  }
+
+  &__stars {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+    justify-content: center;
+  }
+}

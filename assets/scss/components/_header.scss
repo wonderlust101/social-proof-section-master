@@ -1,0 +1,15 @@
+@use '../abstract' as a;
+
+.header {
+  display: grid;
+  gap: 1rem;
+  max-width: 30rem;
+  text-align: center;
+  color: var(--clr-primary-color-very-dark-magenta);
+
+  @include a.breakpoint(medium) {
+    place-self: flex-start;
+    align-content: center;
+    text-align: left;
+  }
+}
