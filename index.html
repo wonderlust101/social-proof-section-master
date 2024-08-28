@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--     <meta name="title" content="title"> -->
-    <!--     <meta name="description" content="description"> -->
+    <meta name="title" content="Social proof of customer service">
+    <meta name="description" content="A set of testimonies and reviews about out product and customer service to prove that we are reliable.">
 
     <title>Frontend Mentor | Social proof section</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
 <body>
+    <header class="sr-only">
+        <h1>This is the social proof section so showcase our reliability.</h1>
+    </header>
+
     <main class="social-proof-layout">
         <header class="header">
             <h2>10,000+ of our users love our products.</h2>
@@ -20,36 +24,36 @@
             <p>We only provide great products combined with excellent customer service.
                 See what our satisfied customers are saying about our services.</p>
         </header>
+
         <section class="reviews-layout">
             <ul class="reviews-grid">
                 <li class="review">
-                    <div class="review__stars">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
+                    <div class="review__stars" aria-hidden="true">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
                     </div>
                     <h3>Rated 5 Stars in Reviews</h3>
                 </li>
                 <li class="review">
                     <div class="review__stars">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
                     </div>
                     <h3>Rated 5 Stars in Report Guru</h3>
                 </li>
                 <li class="review">
                     <div class="review__stars">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
-                        <img src="assets/images/icon-star.svg" alt="">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
+                        <img src="assets/images/icon-star.svg" alt="Star Icon">
                     </div>
                     <h3>Rated 5 Stars in BestTech</h3>
                 </li>
@@ -59,7 +63,7 @@
         <section class="cards-grid">
             <article class="card">
                 <div class="card__buyer">
-                    <img class="card__buyer-image" src="assets/images/image-colton.jpg" alt="">
+                    <img class="card__buyer-image" src="assets/images/image-colton.jpg" alt="Colton Smith side profile">
                     <div class="card__buyer-info">
                         <h3>Colton Smith</h3>
                         <p class="card__buyer-verified">Verified Buyer</p>
@@ -72,7 +76,7 @@
 
             <article class="card">
                 <div class="card__buyer">
-                    <img class="card__buyer-image" src="assets/images/image-irene.jpg" alt="">
+                    <img class="card__buyer-image" src="assets/images/image-irene.jpg" alt="Irene Roberts portrait">
                     <div class="card__buyer-info">
                         <h3>Irene Roberts</h3>
                         <p class="card__buyer-verified">Verified Buyer</p>
@@ -84,7 +88,7 @@
 
             <article class="card">
                 <div class="card__buyer">
-                    <img class="card__buyer-image" src="assets/images/image-anne.jpg" alt="">
+                    <img class="card__buyer-image" src="assets/images/image-anne.jpg" alt="Anne Wallace portrait">
                     <div class="card__buyer-info">
                         <h3>Anne Wallace</h3>
                         <p class="card__buyer-verified">Verified Buyer</p>

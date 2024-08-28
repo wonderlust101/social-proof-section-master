@@ -4,6 +4,7 @@
   display: grid;
   @include a.set-grid-areas(header, reviews, testimonials);
   justify-items: center;
+  align-items: center;
   gap: 4rem;
   place-self: center;
   width: 100%;
@@ -11,6 +12,7 @@
 
   @include a.breakpoint(medium) {
     width: min(90%, 90rem);
+    height: 70%;
     grid-template:
       'header reviews'
       'testimonials testimonials';
@@ -27,12 +29,14 @@
 
   @include a.breakpoint(medium) {
     width: 100%;
-    height: 150%;
+    height: 100%;
     grid-template: 1fr / 1fr 1fr 1fr;
   }
 }
 
 .reviews-layout {
+  //display: flex;
+  //align-items: center;
   width: min(90%, 25rem);
 
   @include a.breakpoint(medium) {
